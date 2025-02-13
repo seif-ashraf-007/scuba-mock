@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Background Slideshow</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="content-overlay">
+        <div class="hero-content">
+          <div class="left-content section">
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <div class="middle-content section">
+            <div class="top">
+              <p class="hero-text">The spirit of adventure ignites a</p>
+            </div>
+            <div class="middle">
+              <!-- <img src="./assets/banner-mask.jpg" class="logo-mask" alt="" /> -->
+              <img src="./assets/logo.png" class="logo-mask" alt="" />
+            </div>
+            <div class="bottom">
+              <p class="hero-text">deep sense of freedom</p>
+            </div>
+          </div>
+          <div class="right-content section">
+            <img src="./assets/logo-text.png" alt="" />
+            <button>
+              <a href="https://www.google.com">More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slide active">
+        <img
+          src="./assets/1.jpg"
+          alt="Slide 1"
+          style="display: none"
+          onload="this.parentElement.style.backgroundImage = `url(${this.src})`"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="./assets/2.jpg"
+          alt="Slide 2"
+          style="display: none"
+          onload="this.parentElement.style.backgroundImage = `url(${this.src})`"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="./assets/3.jpg"
+          alt="Slide 3"
+          style="display: none"
+          onload="this.parentElement.style.backgroundImage = `url(${this.src})`"
+        />
+      </div>
+    </div>
+
+    <div class="sub-hero">
+      <div class="img1 sub-hero-img">
+        <img src="./assets/1.jpg" alt="" />
+        <div class="centered">Text</div>
+      </div>
+      <div class="img2 sub-hero-img">
+        <img src="./assets/2.jpg" alt="" />
+        <div class="centered">Text</div>
+      </div>
+      <div class="img3 sub-hero-img">
+        <img src="./assets/3.jpg" alt="" />
+        <div class="centered">Text</div>
+      </div>
+      <div class="img4 sub-hero-img">
+        <img src="./assets/4.jpg" alt="" />
+        <div class="centered">Text</div>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="left-container">
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="img">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="">
+          <label for="name">
+            <input type="text" placeholder="Name" />
+          </label>
+          <label for="email">
+            <input type="text" placeholder="Email" />
+          </label>
+          <label for="name">
+            <input type="text" placeholder="Name" />
+          </label>
+          <label for="tel">
+            <input type="text" placeholder="Tel no." />
+          </label>
+          <label for="name">
+            <textarea placeholder="Enter your message"></textarea>
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
